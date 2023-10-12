@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap");
+
+body {
+  margin-left: 10;
+  font-family: "Open Sans", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #07030e;
+}
+
+.gradient-bg-welcome {
+  background-color:#07030e;
+  background-image: 
+    radial-gradient(at 0% 0%, rgba(17, 17, 18, 0.829) 0, transparent 50%), 
+    radial-gradient(at 50% 0%, rgb(45, 68, 94) 0, transparent 50%), 
+    radial-gradient(at 100% 0%, rgb(69, 9, 9) 0, transparent 50%);
+}
+
+.blue-glassmorphism {
+  background: rgba(21, 20, 36, 0.771);
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  box-shadow: 0 4px 30px rgba(53, 26, 26, 0.149);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  padding: 10px;
+}
+
+.white-glassmorphism {
+  background: rgba(102, 10, 10, 0.077);
+  border-radius: 10px;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.304);
+  color: #fff;
+}
+
+.text-gradient {
+  background-color: #ffffff;
+  background-image: radial-gradient(at 4% 36%, hsla(0,0%,100%,1) 0, transparent 53%), radial-gradient(at 100% 60%, rgb(251, 197, 197) 0, transparent 50%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+ul {
+  display: flex;
+  list-style:none;
+}
+li {
+  padding: 20px;
+}
+
+
+.button {
+  padding: 5px 10px;
+  background-color: #f0f8ff;
+  color: #000000;
+  font-weight: bold;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease-in-out, filter 300ms;
+  margin: 15px;
+  will-change: filter;
+}
+
+.button:hover {
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+  filter: drop-shadow(0 0 1.5em #c00927);
+}
+
+.button.react:hover {
+  filter: drop-shadow(0 0 1.5em #7a0505aa);
+}
+
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.books {
+  color: #ffffff;
+}
+
+h2 {
+  color: #ffffff;
+}
+
+table {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 640px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    position: relative;
+    margin: auto;
+    justify-content: center;
+  }
+}
+
+
+tbody {
+  color: #fff;
+}
+
+
+
+
